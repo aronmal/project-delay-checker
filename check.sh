@@ -3,6 +3,7 @@
 WORKING_DIR=/home/aronmal/Documents/Github
 
 CHECK_FOR_GIT() {
+    cd $1
     if [ -d ".git" ]; then
         if [ "$(git status -s)" ]; then
             pwd
@@ -12,6 +13,5 @@ CHECK_FOR_GIT() {
 }
 
 for dir in $WORKING_DIR/*/; do
-    cd $dir
-    CHECK_FOR_GIT
+    CHECK_FOR_GIT $dir
 done

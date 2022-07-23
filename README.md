@@ -6,3 +6,4 @@ To get an overview about all uncommitted changes in all of your local project wo
 * [ ] add argument to show all projects that are in time
 * [ ] add a way for custom `WORKING_DIR` (open for ideas)
 * [ ] add summary argument
+* [ ] add argument to set the directory depth level
